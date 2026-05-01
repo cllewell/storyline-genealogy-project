@@ -2,35 +2,38 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5l98TTImY0A":
+      case "6mVUOPyVynw":
         Script1();
         break;
-      case "5ZYClz01VRD":
+      case "6dTCesRzjem":
         Script2();
         break;
-      case "6IlhVvK0Xrd":
+      case "6QzBc44lgn2":
         Script3();
         break;
-      case "6KcjI567cPS":
+      case "6Tgcgqo4t6R":
         Script4();
         break;
-      case "6lIzUp1FJia":
+      case "6ErHP9NGKLq":
         Script5();
         break;
-      case "5my96Z6MzVf":
+      case "6VqObmexhuk":
         Script6();
         break;
-      case "61FSmdsp0FJ":
+      case "5eBFbNjLuQN":
         Script7();
         break;
-      case "6dNjoM6iudk":
+      case "6qzyXFzY42D":
         Script8();
         break;
-      case "5wtm8dmDrdt":
+      case "6MNDBros0js":
         Script9();
         break;
-      case "6n0MfFxp0j6":
+      case "6HiaR0wIHbp":
         Script10();
+        break;
+      case "5hVq58jImiU":
+        Script11();
         break;
   }
 }
@@ -39,9 +42,20 @@ window.InitExecuteScripts = function()
 {
 var player = GetPlayer();
 var object = player.object;
+var once = player.once;
 var addToTimeline = player.addToTimeline;
 var setVar = player.SetVar;
 var getVar = player.GetVar;
+var update = player.update;
+var pointerX = player.pointerX;
+var pointerY = player.pointerY;
+var showPointer = player.showPointer;
+var hidePointer = player.hidePointer;
+var slideWidth = player.slideWidth;
+var slideHeight = player.slideHeight;
+var getKeyDown = player.getKeyDown;
+var keydown = player.keydown;
+var keyup = player.keyup;
 window.Script1 = function()
 {
   const target = object('6OAWbdxjm7I');
@@ -51,9 +65,9 @@ const id = '5cfEwNDH5Bi';
 const growAmount = 0.2;
 player.addForTriggers(
 id,
-target.animate([
-{ scale: `${1 + growAmount}` }
-],
+target.animate(
+[ {scale: `${1 + growAmount}` } ]
+,
   { fill: 'forwards', duration, easing }
 )
 );
@@ -68,9 +82,9 @@ const id = '6Nj1r2ajVmL';
 const growAmount = 0.2;
 player.addForTriggers(
 id,
-target.animate([
-{ scale: `${1 + growAmount}` }
-],
+target.animate(
+[ {scale: `${1 + growAmount}` } ]
+,
   { fill: 'forwards', duration, easing }
 )
 );
@@ -85,9 +99,9 @@ const id = '5buMwWSpNoQ';
 const growAmount = 0.2;
 player.addForTriggers(
 id,
-target.animate([
-{ scale: `${1 + growAmount}` }
-],
+target.animate(
+[ {scale: `${1 + growAmount}` } ]
+,
   { fill: 'forwards', duration, easing }
 )
 );
@@ -102,9 +116,9 @@ const id = '6ZISSPRkEOm';
 const growAmount = 0.2;
 player.addForTriggers(
 id,
-target.animate([
-{ scale: `${1 + growAmount}` }
-],
+target.animate(
+[ {scale: `${1 + growAmount}` } ]
+,
   { fill: 'forwards', duration, easing }
 )
 );
@@ -119,9 +133,9 @@ const id = '6F0wlouKdOy';
 const growAmount = 0.2;
 player.addForTriggers(
 id,
-target.animate([
-{ scale: `${1 + growAmount}` }
-],
+target.animate(
+[ {scale: `${1 + growAmount}` } ]
+,
   { fill: 'forwards', duration, easing }
 )
 );
@@ -136,9 +150,9 @@ const id = '5cfEwNDH5Bi';
 const growAmount = 0.2;
 player.addForTriggers(
 id,
-target.animate([
-{ scale: `${1 + growAmount}` }
-],
+target.animate(
+[ {scale: `${1 + growAmount}` } ]
+,
   { fill: 'forwards', duration, easing }
 )
 );
@@ -153,9 +167,9 @@ const id = '6Nj1r2ajVmL';
 const growAmount = 0.2;
 player.addForTriggers(
 id,
-target.animate([
-{ scale: `${1 + growAmount}` }
-],
+target.animate(
+[ {scale: `${1 + growAmount}` } ]
+,
   { fill: 'forwards', duration, easing }
 )
 );
@@ -170,9 +184,9 @@ const id = '5buMwWSpNoQ';
 const growAmount = 0.2;
 player.addForTriggers(
 id,
-target.animate([
-{ scale: `${1 + growAmount}` }
-],
+target.animate(
+[ {scale: `${1 + growAmount}` } ]
+,
   { fill: 'forwards', duration, easing }
 )
 );
@@ -187,9 +201,9 @@ const id = '6F0wlouKdOy';
 const growAmount = 0.2;
 player.addForTriggers(
 id,
-target.animate([
-{ scale: `${1 + growAmount}` }
-],
+target.animate(
+[ {scale: `${1 + growAmount}` } ]
+,
   { fill: 'forwards', duration, easing }
 )
 );
@@ -204,9 +218,9 @@ const id = '5oo7tjELPmo';
 const growAmount = 0.2;
 player.addForTriggers(
 id,
-target.animate([
-{ scale: `${1 + growAmount}` }
-],
+target.animate(
+[ {scale: `${1 + growAmount}` } ]
+,
   { fill: 'forwards', duration, easing }
 )
 );
